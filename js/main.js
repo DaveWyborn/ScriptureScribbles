@@ -7,10 +7,11 @@ toggleBtn.addEventListener('click', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const accessibilityBtn = document.getElementById('accessibilityToggle');
   accessibilityBtn.addEventListener('click', () => {
     document.body.classList.toggle('accessible');
   });
 });
+
 
