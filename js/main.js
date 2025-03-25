@@ -5,3 +5,12 @@ toggleBtn.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
   toggleBtn.textContent = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const accessibilityBtn = document.getElementById('accessibilityToggle');
+  accessibilityBtn.addEventListener('click', () => {
+    document.body.classList.toggle('accessible');
+  });
+});
+
