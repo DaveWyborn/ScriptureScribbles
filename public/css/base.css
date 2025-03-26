@@ -1,5 +1,8 @@
+/********************/
+/*      Basics      */
+/********************/
 
-/* Reset and Basics */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +16,28 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation Base */
+
+/* Link styles */
+a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+  color: #333;
+  text-decoration: underline;
+}
+
+
+
+/**********************/
+/* Layout & Structure */
+/**********************/
+
+
+
+
 header {
   position: fixed;
   top: 20px;
@@ -32,6 +56,9 @@ header:hover {
   transform: translateX(-50%) translateY(-5px) scale(1.02);
   box-shadow: 0 12px 24px rgba(0,0,0,0.4);
 }
+
+
+/* Navigation Bar */
 
 nav {
   display: flex;
@@ -75,6 +102,26 @@ nav .nav-links button:hover {
   color: #e0e0e0;
 }
 
+/* Main Sections */
+
+main {
+  min-height: 150vh;
+}
+
+
+
+.scroll-spacer {
+  height: 300px;
+}
+
+
+
+/**********************/
+/*     Components     */
+/**********************/
+
+
+
 /* Hero Section */
 .hero {
   color: #fff;
@@ -106,6 +153,9 @@ nav .nav-links button:hover {
   text-align: center;
 }
 
+
+/* Home Page Welcome */
+
 .welcome h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -116,32 +166,12 @@ nav .nav-links button:hover {
   color: #555;
 }
 
-.scroll-spacer {
-  height: 300px;
-}
 
-/* Link styles */
-a {
-  color: #555;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
 
-a:hover, a:focus {
-  color: #333;
-  text-decoration: underline;
-}
+/***************************/
+/* Typography / Readbility */
+/***************************/
 
-/* Gradient Animation */
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-main {
-  min-height: 150vh;
-}
 
 
 .welcome h1,
@@ -153,5 +183,22 @@ main {
 .welcome p {
   margin-bottom: 1.2rem;
 }
+
+
+/**********************/
+/*     Animation      */
+/**********************/
+
+
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
 
 
