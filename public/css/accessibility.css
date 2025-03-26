@@ -1,0 +1,13 @@
+
+/* High-visibility link styles for accessibility mode */
+body.accessible a {
+  color: #0066cc;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Optional: Improve readability */
+body.accessible {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
